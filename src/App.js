@@ -1,19 +1,19 @@
 import React from "react";
 
 export default function App() {
-  const [count,setCount] = React.useState(0);
+  const [count, setCount] = React.useState(0);
 
-  function Add () {
-    setCount ( prevCount => prevCount + 1);
+  function Add() {
+    setCount(prevCount => prevCount + 1);
   }
 
-  function Subtract () {
-    setCount ( prevCount => prevCount - 1);
+  function Subtract() {
+    setCount(prevCount => prevCount - 1);
   }
 
   return (
      <div className="counter">
-      <button className="counter--minus" onClick={Subtract}>–</button>
+      <button className="counter--minus" onClick={Subtract}>-</button>
             <div className="counter--count">
                 <h1>{count}</h1>
             </div>
